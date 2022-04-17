@@ -10,11 +10,16 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "django.contrib.sites",
     "accounts.apps.AccountsConfig",
     "workout.apps.WorkoutConfig",
     "nested_inline",
     "rest_framework",
     "rest_framework.authtoken",
+    "dj_rest_auth",
+    "dj_rest_auth.registration",
+    "allauth",
+    "allauth.account",
 ]
 
 MIDDLEWARE = [
@@ -89,3 +94,5 @@ REST_FRAMEWORK = {
 }
 
 AUTH_USER_MODEL = "accounts.CustomUser"
+
+SITE_ID = 1
