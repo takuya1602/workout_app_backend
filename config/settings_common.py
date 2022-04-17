@@ -12,7 +12,6 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "accounts.apps.AccountsConfig",
     "workout.apps.WorkoutConfig",
-    "whitenoise.middleware.WhiteNoiseMiddleware",
     "nested_inline",
     "rest_framework",
     "rest_framework.authtoken",
@@ -26,6 +25,7 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
+    "whitenoise.middleware.WhiteNoiseMiddleware",
 ]
 
 ROOT_URLCONF = "config.urls"
